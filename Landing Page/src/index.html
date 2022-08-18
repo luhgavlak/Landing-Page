@@ -4,38 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="style.css">
     <title>Miroir Club</title>
 </head>
+
 <body>
-    <header class="titlepage">
+    <header class="pagetop">
         <a class="logo" alt="Logo da Miroir Club">Miroir Club</a>
-        <nav class="titlepage-menu">
-          <a class="titlepage-menu-item">Sobre</a>
-          <a class="titlepage-menu-item">Ingressos</a>
-          <a class="titlepage-menu-item">Reservas</a>
-          <a class="titlepage-menu-item">Cardápio</a>
+        <nav class="pagetop-menu">
+          <a class="pagetop-menu-item">Sobre</a>
+          <a class="pagetop-menu-item">Ingressos</a>
+          <a class="pagetop-menu-item">Reservas</a>
+          <a class="pagetop-menu-item">Cardápio</a>
         </nav>
       </header>
 
-      <div class="neonborder">
-        <div class="backimg" src="/img/pexels-alena-darmel-6940093.jpg"></div>
-      <main class="content">
-        <section class="main-content">
-          <div class="main-content-written">
-            <h2 class="main-content-written-subtitle">Reinauguração do</h2>
-            <h1 class="main-content-written-title">Miroir Club</h1>
-            <p class="main-content-written-text">O melhor lounge bar da cidade agora conta com deck e balada, acompanhado com uma coquetelaria toda repensada e autoral</p>
+      <main>
+        <div class="content">
+          <div class="background-container">
+            <img class="container-image" src="/img/pexels-alena-darmel-6940093.jpg">
+            <div class="container-border"></div>
           </div>
-        </section>
-    
-        <section class="formcontent">
-          <form>
+          <section class="text-content">
+            <h2 class="text-content-subtitle">Reinauguração do</h2>
+            <h1 class="text-content-title">Miroir Club</h1>
+            <p class="text-content-phrase">O melhor lounge bar da cidade agora conta <br/> com deck e balada, acompanhado com uma <br/> coquetelaria toda repensada e autoral</p>
+          </section>
 
-          </form>
-        </section>
+          <section>
+            <div class="glass-background">
+              <form>
+                <div class="space">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-text" id="form-title">
+                  <p>Inscreva-se para <br/> concorrer a um par de <br/> ingressos</p>
+                </div>
+
+                <div class="space">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="space">
+                  <label for="birthdate">Data de nascimento</label>
+                  <input type="date" name="date" id="date" required>
+                </div>
+              </form>
+
+              <div class="form-text" id="form-subtitle">
+                <p>Embarque no evento mais esperado da <br/> temporada</p>
+              </div>
+            </div>
+
+          </section>
+      </div>
       </main>
-    </div>
-    
+
 </body>
 </html>
