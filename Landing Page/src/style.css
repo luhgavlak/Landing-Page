@@ -10,16 +10,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
   }
 
   body {
     font-size: 100%;
-    background: rgba(5,9,75,1);
-    background-color: linear-gradient(0deg, rgba(5,9,75,1) 0%, rgba(84,5,103,1) 100%);
-    background-size: 100%;
+    background-image: linear-gradient(to right top, #1f0452, #320555, #420658, #500a5a, #5e0f5c);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .titlepage {
@@ -82,4 +80,15 @@
     font-family: "Kiona";
     font-size: 20px;
     color: #d7d7d7;
+  }
+
+
+
+
+  .glass{
+background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
   }
