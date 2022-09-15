@@ -1,137 +1,202 @@
-@font-face{
+@font-face {
     font-family: "Potra";
     src: local(Potra), url(../typography/Potra.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: "Kiona";
     src: local(Kiona), url(../typography/Kiona-Regular.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-
-  body {
+body {
     font-size: 100%;
-    background-image: linear-gradient(to right top, #1f0452, #320555, #420658, #500a5a, #5e0f5c);
+    background-image: linear-gradient(to right top, #000000, #1f090e, #340d13, #490e13, #5e0f0f);
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+    padding: 20px;
+}
 
-  .pagetop {
+body::-webkit-scrollbar{
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #340d13;
+}
+
+/* menu */
+.pagetop {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 30px;
-  }
-  
-  .logo {
-    display:flex;
-    font-family: "Potra";
-    font-size: 30px;
-    color: #d7d7d7;
-  }
-  
-  .pagetop-menu {
-    display: flex;
-    gap: 32px;
-  }
-  
-  .pagetop-menu-item {
-    font-family: "Kiona";
-    color: #d7d7d7;
-    font-size: 22px;
-  }
-
-.content{
-  position: relative;
+    padding: 23px;
+    margin: 10px;
 }
 
-  .background-container{
+.logo {
     display: flex;
-    justify-content: center;
-    
-  }
-  
-  .container-image{
-    width: 82.5%;
-    opacity: 40%;
-    position: absolute;
-  }
-
-  .container-border{
-    display:flex;
-    box-sizing: border-box;
-    width: 76.25rem;
-    height: 50.625rem;
-    align-self: center;
-    position: relative;
-    box-shadow: inset 0 0 15px 0 #f688f9, 0 0 15px 0 #f688f9;
-    border: 4px solid #F688F9;
-  }
-
-  .text-content{
-    position: absolute;
+    font-family: "Potra";
+    font-size: 30px;
+    font-weight: 100;
+    color: #616745;
+    align-items: center;
     text-align: center;
-    justify-content: flex-start;
-  }
+}
 
-  .text-content-subtitle{
+.pagetop-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.pagetop-menu-item {
     font-family: "Kiona";
-    font-size: 26px;
-    color: #d7d7d7;
+    color: #ffdddd;
+    font-size: 22px;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+    background-image: url("../img/background.png");
+    background-blend-mode: color-burn;
+    background-size: 120rem;
+    box-shadow: inset 0 0 10px 0 #6b2121, 0 0 10px 0 #6b2121;
+    border: 4px solid #551616;
+    border-radius: 10px;
+    z-index: -1;
+    
+}
+
+.FlexContainer::-webkit-scrollbar{
+    width: 5px;
+}
+
+.FlexContainer::-webkit-scrollbar-track{
+    background: #5e0f0f;
+    border-radius: 2px;
+}
+
+.FlexContainer::-webkit-scrollbar-thumb {
+    background-color: #490e13;   
+    border-radius: 10px;
   }
 
-  .text-content-title{
+.box {
+    position: relative;
+    margin: 5rem;
+    
+}
+@media (min-width: 320px) and (max-width: 1403px) {
+    .box {
+        margin-top: 50rem;
+    }
+}
+.text-content {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.text-content-subtitle {
+    font-family: "Kiona";
+    font-size: 30px;
+    font-weight: 100;
+    color: #ffdddd;
+}
+
+.text-content-title {
     font-family: "Potra";
     font-size: 90px;
-    color: #F688F9;
-    text-shadow: 0 0 1px hsl(0 0% 100% / 0.3), 0 0 20px;
-  }
+    font-weight: 100;
+    color: #616745;
+}
 
-  .text-content-phrase{
+.text-content-phrase {
     font-family: "Kiona";
-    font-size: 20px;
-    color: #d7d7d7;
-  }
+    font-size: 16px;
+    color: #ffdddd;
+}
 
-  .glass-background{
+/*form*/
+.box2{
+    max-height: 55rem;
+    width: 30rem;
+    margin: 5rem;
+    z-index: 2;
+}
+
+form {
+    max-width: calc(80% + 1px);
+    max-height: 36rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-clip: padding-box;
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
     background: rgba(255, 255, 255, 0.14);
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
-    width: 600px;
-    height: 600px;
-  }
+    box-sizing: content-box;
+    position: relative;
+    z-index: -10;
+    
+}
 
-  .space input[type=text], .space input[type="email"]{
-    display: block;
+input {
+    height: 3rem;
+    border-radius: 4px;
+    background-clip: padding-box;
+    font-size:18px;
+    /*margin: 0.7rem;*/
+    color:#DDDEE7;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    /*background: #242424;*/
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: transparent;
     font-family: "Kiona";
-    font-size: 26px;
-  }
+}
 
+.button{
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #d7d7d7;
+    border-color: #d7d7d7;
+    border: 1px solid;
+    width: 7rem;
+    height: 2rem;
+    font-family: 'Kiona';
+}
 
+label{
+    font-family: "Kiona";
+}
 
-
-  .form-text{
+.form-text {
     text-align: center;
     font-family: "Kiona";
-  }
+    color: #ffdddd;
+}
 
-  #form-title{
+#form-title {
     font-size: 26px;
-  }
+}
 
-  #form-subtitle{
-    font-size: 20px;
-  }  
-
-
-
-
-
-  
+#form-subtitle {
+    font-size: 16px;
+}
