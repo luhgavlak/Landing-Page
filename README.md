@@ -11,3 +11,4 @@
 
 ## Demonstração
 <img src="https://github.com/luhgavlak/Landing-Page-Casa-Noturna/blob/main/assets/capturadetela.png"/>
+<img src="https://github.com/luhgavlak/Landing-Page-Casa-Noturna/blob/main/assets/mockup_.png"/>
