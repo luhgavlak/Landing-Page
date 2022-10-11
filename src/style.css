@@ -10,7 +10,7 @@
   
 body {
     font-size: 100%;
-    background-image: linear-gradient(#000000, #1f090e, #340d13, #490e13, #5e0f0f);
+    background-image: linear-gradient(to left bottom,#000000, #1f090e, #340d13, #490e13, #5e0f0f);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: auto;
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-track{
     display: flex;
     font-family: "Potra";
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 800;
     color: #616745;
     align-items: center;
     text-align: center;
@@ -59,17 +59,17 @@ a{
   
 .pagetop-menu {
     display: flex;
-    /*gap: 32px;*/
 }
   
 .pagetop-menu-item {
     font-family: "Kiona";
-    color: #ad7777;
+    color: #ad8c8c;
     font-size: 22px;
+    font-weight: 800;
 }
   
 .pagetop-menu-item:hover{
-    text-shadow: 0 0 0.3em #ffdddd;
+    text-shadow: 0 0 0.2em #ffdddd;
 }
 
 .FlexContainer {
@@ -78,7 +78,7 @@ a{
     justify-content: center;
     align-items: flex-start;
     align-content: center;
-    height: 80vh;
+    height: 85vh;
     overflow: auto;
     flex-direction: row;
     background-image: url("../assets/img/background.png");
@@ -125,7 +125,7 @@ a{
     font-family: "Kiona";
     font-size: 30px;
     font-weight: 600;
-    color: #ad7777;
+    color: #ad8c8c;
 }
   
 .text-content-title {
@@ -139,7 +139,14 @@ a{
     font-family: "Kiona";
     font-size: 16px;
     font-weight: 600;
-    color: #ad7777;
+    color: #ad8c8c;
+}
+
+.subtitle{
+    font-family: 'Kiona';
+    font-size: 12px;
+    font-weight: 900;
+    color:#ad7777;
 }
 
 /*=====form=====*/
@@ -184,10 +191,16 @@ input {
     border-bottom:1px solid #ad7777;
     background-color: transparent;
     color: #ffdddd;
+    caret-color: #865f5f;
 }
 
-.datepicker-input::-webkit-calendar-picker-indicator{
+.datepicker-input{
     color: #ad7777;
+    color-scheme: dark;
+}
+
+::webkit-calendar-picker-indicator{
+    filter:invert();
 }
   
 input:focus{ 
@@ -244,8 +257,8 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .button_submit{
     box-sizing: border-box;
     background-color: transparent;
-    color: #ffdddd;
-    border-color: #ffdddd;
+    color: #ad8c8c;
+    border-color: #ad8c8c;
     border: 1px solid;
     width: 7rem;
     height: 2rem;
@@ -256,9 +269,10 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .button_submit:hover{
-    background-color: #490e13;
+    background-color: #ad8c8c;
+    color:#5e0f0f;
+    font-weight: 800;
     border: none;
-    box-shadow: inset 0 0 10px 0 #6b2121, 0 0 10px 0 #6b2121;
 }
   
 .form-text {
@@ -270,9 +284,15 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   
 #form-title {
     font-size: 26px;
+    color: #ad8c8c
 }
   
 #form-subtitle {
     font-size: 16px;
-    color: #865f5f;
+    color: #ad8c8c;
+}
+
+::selection{
+    background-color: #ad8c8c;
+    color:#551616;
 }
